@@ -1,3 +1,8 @@
+# ADESSO ABBIAMO UN FORUM! 
+
+# [CLICCA QUI](https://nfeteam.org/forum/forums/Italian-forum/) PER RAGGIUNGERCI! 
+
+
 # ArcticFox
 *Il [team NFE](http://nfeteam.org) presenta un custom firmware per le battery mod Joyetech, Wismec ed Eleaf*
 
