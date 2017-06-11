@@ -1,14 +1,16 @@
 # We now have a forum
-Please do not create new issues on GitHub. We will close this possibility in a 2-4 weeks.
-If you have questions or suggestions or you just want to talk - https://nfeteam.org/forum. 
-We are hoping that you will like it ;)
+GitHubで新規ISSUEを作成しないで下さい。２～４週間でクローズする予定です。
+疑問、提案、会話をしたい場合は - https://nfeteam.org/forum をご利用ください。
+気に入ってくれると良いのですが。
 
 # ArcticFox
-*[NFE Team](http://nfeteam.org) はJoyetech, Wismec,  Eleaf　モッド用のカスタムファームウェアを提供します*
+*[NFE Team](http://nfeteam.org) はJoyetech, Wismec,  Eleafのデバイス用のカスタムファームウェアを提供しています。*
 
 ![](http://i.imgur.com/PqSrmLb.png) ![](http://i.imgur.com/C8Lu9SG.png) ![](http://i.imgur.com/aBhNKxV.png) ![](http://i.imgur.com/rk6gZo8.png) ![](http://i.imgur.com/5mU3FAB.png) ![](http://i.imgur.com/wl8wR8d.png) ![](http://i.imgur.com/s3yNIEf.png)
 
-**Use [NFE Toolbox](https://github.com/TBXin/NFirmwareEditor/releases) for [installing](https://github.com/maelstrom2001/ArcticFox/wiki/How-to-install) firmware and configuring your device.**
+
+**ファームウェアの [インストール](https://github.com/maelstrom2001/ArcticFox/wiki/How-to-install)、デバイスの設定には [NFE Toolbox](https://github.com/TBXin/NFirmwareEditor/releases) をご利用ください**
+
 
 ## サポート対象のデバイス一覧:
 ### Joyetech:
@@ -54,63 +56,64 @@ We are hoping that you will like it ;)
 * iStick TC200W
 * iStick QC 200W
 
-## Limitations
-The safe use of our software it's one of our main goals. We retain all factory restrictions, because the device manufacturer did NOT make them "just for fun".
-What are the limitations?
-* Minimal Resistance (For all supported devices)
-  * 0.05 Ohm for Temperature Control mode
-  * 0.1 Ohm for Vari-Watt mode
-* Output Wattage (Depending on the device)
-* Maximum Charging Current (Depending on the device)
-* Maximum Output Current (Depending on the device)
-* Output Voltage Range (Depending on the device)
+## 制限事項
+安全なソフトウェアの利用は私たちの目標の一つです。 我々はメーカーの制限事項に準拠しています。
 
-"Depending on the device" means that each device has its own values, which are choosen by the manufacturer. You can find this values on the product page of your manufacturer's website.
+制限事項は以下となります。
+* 最小抵抗値 (すべてのデバイスが対象)
+  * 温度管理モードの場合 0.05 オーム
+  * VWモードの場合 0.1 オーム
+* 出力ワッテージ (デバイスに依存)
+* 最大充電電流 (デバイスに依存)
+* 出力電流  (デバイスに依存)
+* 出力電圧範囲 (デバイスに依存)
 
-**All requests to change these values will be rejected as we don't want you to hurt yourself or your device.**
+「デバイスに依存」 とはメーカによって設定されたデバイスの性能に依存するということです。ご利用メーカの製品ホームページで値を確認してください。
+
+**あなたやあなたのデバイスが傷つくことを望んでいません。そのため、これらの制限事項への変更要求は受付けません。**
 
 
-## Profiles
-The main difference is the profile based user interface, so to say, the DNA-style, and the larger focus on customization than original Joyetech firmware.
-Profile is the set of parameters of used atomizer, such as coil material, resistance, power and temperature values.
-The user have 8 profiles which can be edited with NFE Toolbox, and which can be assigned to his favourite atomizers.
+## プロファイル
+Joyetechのオリジナルファームウェアとの主な違いはユーザーインターフェース（DNAのようなスタイル）とカスタマイズ性です。
+プロファイルは使用するアトマイザー、コイルの素材、抵抗値、出力、温度などのパラメーターがセットとなったものです。
+NFE Toolboxを使用して好みとマイザーに応じて８つのプロファイルを編集することができます。
 
 ![](http://i.imgur.com/GF9vAbN.gif) ![](http://i.imgur.com/n7IAwpv.gif)
 
-Profiles can be switched automatically, based on saved coil resistance, and in manual mode. All you need to use the automatic switch is to enable "Smart" mode, install atomizer and assign them to the desired profile.
+マニュアルモードにおいてプロファイルは保存されたコイルの抵抗値によって自動切換となります。自動切換を使用するためには「スマートモード」を有効後、アトマイザーを取り付け利用したいプロファイルに割り当ててください。
+
 
 ![](http://i.imgur.com/J8TXMpU.png) ![](http://i.imgur.com/PvMv2at.png)
 
-When you re-install this atomizer later, assigned profile will be activated automatically.
-If resistance of installed atomizer is not found in profiles, you'll be prompted to select new profile or re-assign existing.
+再度アトマイザーを取り付けた場合、自動的にプロファイルが設定されます。プロファイルにアトマイザーの抵抗値が見つからない場合、新しいプロファイルを選択するか、既存のプロファイルを設定してください。
 
-When you switching manually to profile that have saved resistance mismatch, you'll be prompted to update or keep settings of selected profile.
+保存された抵抗値と異なるプロファイルを手動で選択した場合、 選択したプロファイルの設定の更新(Update)か維持(Keep)を選択を求められます。
 
 ![](http://i.imgur.com/2u0Jgwb.png) ![](http://i.imgur.com/prrhsrr.png)
 
 
-## Main Screen
+## メインスクリーン
 
 ![](http://i.imgur.com/ARKJkRS.gif)
 
-Editing the main screen differs from original Joyetech firmwares. To edit items on main screen, call action "Edit Main" (4 Fire button clicks by default). Single Fire button click will switch next available editable item. Edit selected item by pressing regulatory buttons. To exit edit mode hold Fire button for about 1 sec.
+Editing the main screen differs from original Joyetech firmwares. To edit items on main screen, call action "Edit Main" (デフォルトではファイヤーボタン4回クリック). Single Fire button click will switch next available editable item. Edit selected item by pressing regulatory buttons. To exit edit mode hold Fire button for about 1 sec.
 
 
-## Main Menu
+## メインメニュー
 
-Hold Fire and Plus buttons (by default) for a 1 second to enter menu.
+ファイヤーボタンとプラスボタンを1秒同時押しするとメニューに遷移します。（デフォルト設定の場合）
 
 ![](http://i.imgur.com/feb0TFy.png) ![](http://i.imgur.com/be2BWSt.png)
 
-### Profile Menu
+### プロファイルメニュー
 
 ![](http://i.imgur.com/k5lilx4.png) ![](http://i.imgur.com/5ZPdPL1.png) ![](http://i.imgur.com/eVM4jxZ.png) ![](http://i.imgur.com/6874bnH.png)
 
-* **Wire** - coil material, temperature sensing or not (VW), can be set to standard or user-defined TFR;
-* **Coil** - saved coil resistance;
+* **ワイヤー** - coil material, temperature sensing or not (VW), can be set to standard or user-defined TFR;
+* **コイル** - saved coil resistance;
 * **TCR** - value can be edited when selected Joyetech TC algo with custom TCR;
 * **T. Dom** - temperature-dominant regulation style;
-* **Preheat** - power control, use preheat or power curve;
+* **プリヒート** - power control, use preheat or power curve;
 * **PI-Reg** - PI Regulator for TC mode, improves power and temperature stabilization:
      - PI-Reg On/Off - switch between stock Joyetech and PI regulation;
      - Range - 0..100% - temperature range when PI regulation becomes active. 0 means that regulator is always on and controls power distribution from start of puff, 20% for example - PI regulator turns on when temperature of coil reached 20% range from profile settings;
