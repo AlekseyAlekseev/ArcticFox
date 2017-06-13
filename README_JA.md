@@ -70,7 +70,7 @@ GitHubで新規ISSUEを作成しないで下さい。２～４週間でクロー
 
 「デバイスに依存」 とはメーカによって設定されたデバイスの性能に依存するということです。ご利用メーカの製品ホームページで値を確認してください。
 
-**あなたやあなたのデバイスが傷つくことを望んでいません。そのため、これらの制限事項への変更要求は受付けません。**
+**我々はあなたやご利用のデバイスが傷つくことを望んでいません。そのため、これらの制限事項への変更要求は受付けません。**
 
 
 ## プロファイル
@@ -96,7 +96,6 @@ NFE Toolboxを使用して好みとマイザーに応じて８つのプロファ
 
 ![](http://i.imgur.com/ARKJkRS.gif)
 
-Editing the main screen differs from original Joyetech firmwares. To edit items on main screen, call action "Edit Main" (デフォルトではファイヤーボタン4回クリック). Single Fire button click will switch next available editable item. Edit selected item by pressing regulatory buttons. To exit edit mode hold Fire button for about 1 sec.
 
 ## メインメニュー
 
