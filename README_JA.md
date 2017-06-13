@@ -92,12 +92,11 @@ NFE Toolboxを使用して好みとマイザーに応じて８つのプロファ
 ![](http://i.imgur.com/2u0Jgwb.png) ![](http://i.imgur.com/prrhsrr.png)
 
 
-## メインスクリーン
+## メイン画面
 
 ![](http://i.imgur.com/ARKJkRS.gif)
 
 Editing the main screen differs from original Joyetech firmwares. To edit items on main screen, call action "Edit Main" (デフォルトではファイヤーボタン4回クリック). Single Fire button click will switch next available editable item. Edit selected item by pressing regulatory buttons. To exit edit mode hold Fire button for about 1 sec.
-
 
 ## メインメニュー
 
@@ -109,69 +108,69 @@ Editing the main screen differs from original Joyetech firmwares. To edit items 
 
 ![](http://i.imgur.com/k5lilx4.png) ![](http://i.imgur.com/5ZPdPL1.png) ![](http://i.imgur.com/eVM4jxZ.png) ![](http://i.imgur.com/6874bnH.png)
 
-* **ワイヤー** - coil material, temperature sensing or not (VW), can be set to standard or user-defined TFR;
-* **コイル** - saved coil resistance;
+* **Wire(ワイヤー)** - コイルの素材, 温度管理かVW, 標準化、ユーザー設定のTFRが設定できます。
+* **Coil（コイル）** - コイルの抵抗を保存できます。
 * **TCR** - value can be edited when selected Joyetech TC algo with custom TCR;
 * **T. Dom** - temperature-dominant regulation style;
-* **プリヒート** - power control, use preheat or power curve;
-* **PI-Reg** - PI Regulator for TC mode, improves power and temperature stabilization:
+* **プリヒート（Preheat）** - パワー調整, プリヒートかパワーカーブを使用
+* **PI-調整（PI-Reg）** - 温度管理用のPI調整です、パワーと温度管理の安定を改善します。
      - PI-Reg On/Off - switch between stock Joyetech and PI regulation;
      - Range - 0..100% - temperature range when PI regulation becomes active. 0 means that regulator is always on and controls power distribution from start of puff, 20% for example - PI regulator turns on when temperature of coil reached 20% range from profile settings;
      - P - proportional constant, the larger it is, the sharper the power changed;
      - I - integral constant, the larger it is, the settled power distribution is smoother.
 
-### Screen Menu
+### 画面メニュー
 
 ![](http://i.imgur.com/ANnqWiG.png) ![](http://i.imgur.com/Z5ygFZR.png) ![](http://i.imgur.com/IKs6AeP.png) ![](http://i.imgur.com/u2wvplG.png) ![](http://i.imgur.com/f4pXIRN.png) ![](http://i.imgur.com/ozrsc7q.png)
 
-* **Wake <>** - waking mod up by pressing regulatory buttons;
-* **Logo** - show logo on main screen;
+* **Wake <>** - 調整ボタンを押すことによってモッドを起動するか
+* **Logo** - メイン画面にロゴを表示するか
 * **Clock**
-     - **Type** - analog or digital;
-     - **On Main** - show clock on main screen;
-     - **Saver** - show clock in standby mode;
+     - **Type** - アナログかデジタル
+     - **On Main** - メイン画面に時計を表示するか
+     - **Saver** - 待機モードで時計を表示するか
 * **Timeouts**
-     - **Dim** - idle time before the screen turns off;
-     - **Dim** ![](https://cdn2.iconfinder.com/data/icons/font-awesome/1792/lock-16.png) - idle time before the screen turns off in locked state;
-     - **Logo** - idle time before displaying logo;
-     - **Clock** - idle time before displaying clock;
+     - **Dim** - 画面オフまでの待機時間
+     - **Dim** ![](https://cdn2.iconfinder.com/data/icons/font-awesome/1792/lock-16.png) - ロック状態での画面オフまでの待機時間
+     - **Logo** - ロゴ表示までの待機時間
+     - **Clock** - 時計表示までの待機時間
 * **Charge**
-     - **Type** - charging screen type, standard or with additional information;
-     - **Add.** - extra item, clock or logo;
-* **Stealth** - settings for screen in Stealth Mode:
-     - **Charge** - charging screen will be shown in Stealth Mode;
-     - **Saver** - screen saver will be shown in Stealth Mode;
-     - **ClkOnF** - when Clock on Main Screen option is enabled, clock will be shown immediately on single Fire click;
-* **Contrast** - adjust brightness of display;
-* **Skin** - change main screen style.
+     - **Type** - 充電中の画面タイプ、 標準のみか追加情報を含めるか
+     - **Add.** - extra item, 時計かロゴ
+* **Stealth** - ステルスモード時の画面設定
+     - **Charge** - ステルスモード中に充電画面を表示するか
+     - **Saver** - ステルスモード中にスクリーンセーバーを表示するか
+     - **ClkOnF** - オプションが有効な場合、メイン画面に時計を表示するか。ファイヤーボタンを1回押すと時計が表示されます。
+* **Contrast** - 画面に輝度変更
+* **Skin** - メイン画面のスタイルを変更
 
-### Settings Menu
+### 設定メニュー
 
 ![](http://i.imgur.com/iWCQH2q.png) ![](http://i.imgur.com/mQYC7Vi.png) ![](http://i.imgur.com/24Oqlur.png) ![](http://i.imgur.com/mS1hiZY.png)
 
-* **1 Watt** - increment/decrement power by 1,0 Watt;
-* **Clicks** - actions assigned on
+* **1 Watt** - 1ワット単位でパワーを調整するか
+* **Clicks** - アクションの割り当てをします
      * **2/3/4 Fire button clicks**:
-          - None;
-          - Edit Main - Joyetech default 3-clicks action;
-          - Main Menu - enter Main Menu, the same as Fire + ;
-          - Preheat - preheat settings for active profile;
-          - Profiles - Profiles Selector;
-          - Edit Profile - enter Profile Menu;
-          - T. Dom - temperature-dominant on/off;
-          - Clock - show/hide clock on main screen;
-          - Info - show Info Screen;
-          - Reset Cnt. - show vaping stats info screen with opportunity to reset counters;
-          - ![](https://cdn4.iconfinder.com/data/icons/font-awesome-2/2048/f011-16.png) Bank - switch box to Power Bank mode;
-          - Coil ![](https://cdn2.iconfinder.com/data/icons/font-awesome/1792/lock-16.png) - switch coil resistance lock on/off (for TC modes);
-          - Key ![](https://cdn2.iconfinder.com/data/icons/font-awesome/1792/lock-16.png) - switch Keylock on/off;
-          - Stealth - switch Stealth Mode on/off;
-          - Smart On/Off - switch Smart Mode on/off;
-          - LSL - switch light sleep mode on/off;
-          - Device ![](https://cdn2.iconfinder.com/data/icons/font-awesome/1792/lock-16.png) - switch Device Lock on / off (lock all buttons but leave mod powered on);
-          - On/Off - switch mod on/off;
+          - None - 何もしない
+          - Edit Main - Joyetechのデフォルトは3クリック
+          - Main Menu - メインメニューに遷移します。 ファイヤーボタンと+ボタン同時押しと同じ
+          - Preheat - 有効なプロファイルのプリヒートを設定
+          - Profiles - プロファイルを選択する
+          - Edit Profile - プロファイルメニューへ遷移
+          - T. Dom - temperature-dominant on/off
+          - Clock - メイン画面に時計を表示するか
+          - Info - 情報画面を表示
+          - Reset Cnt. - 情報画面にshow vaping stats info screen with opportunity to reset counters;
+          - ![](https://cdn4.iconfinder.com/data/icons/font-awesome-2/2048/f011-16.png) Bank - パワーバンクモードへ移行
+          - Coil ![](https://cdn2.iconfinder.com/data/icons/font-awesome/1792/lock-16.png) - コイル抵抗ロックのon/off (温度管理モード用);
+          - Key ![](https://cdn2.iconfinder.com/data/icons/font-awesome/1792/lock-16.png) - キーロックのon/off;
+          - Stealth - ステルスモードのon/off
+          - Smart On/Off - スマートモードのon/off
+          - LSL - スリープモードのon/off
+          - Device ![](https://cdn2.iconfinder.com/data/icons/font-awesome/1792/lock-16.png) - デバイスロックのon / off (全ボタンをロック but leave mod powered on)
+          - On/Off - モッド本体のon/off
      * **5 Fire button clicks**:
-          - On/Off - switch mod on/off;
+          - On/Off - モッド本体のon/off
           - Device ![](https://cdn2.iconfinder.com/data/icons/font-awesome/1792/lock-16.png) - lock all buttons but leave mod powered on;
 * **Smart** - automatic switching profiles settings:
      - Off/On/Lazy - Smart Mode behavior setting, Lazy means that profile can be switched automatically only on atomizer change while the box is in active state;
@@ -187,10 +186,10 @@ Editing the main screen differs from original Joyetech firmwares. To edit items 
 * **USB**
      - NoSlp - do not enter deep sleep mode while connected to USB - may lead to self-discharging multi-cells boxes after charging stops;
      - Charge - device is charging batteries while connected to USB - for multi-cells boxes only;
-* **BVO** - batteries voltages offset;
-* **BATT** - battery discharge profile;
-* **SHUNT** - Ohm-meter correction;
-* **ChkTCR** - check coil material TCR, switching this option to off can eliminate TCR Error on heavy coils;
+* **BVO** - バッテリー電圧のオフセット
+* **BATT** - バッテリー放電のプロファイル
+* **SHUNT** - オームメーターの訂正
+* **ChkTCR** - 恋す素材のTCRチェック、 switching this option to off can eliminate TCR Error on heavy coils;
 * **RCOBC** - Reset Counters on Battery Change, clear vaping statistics;
 * **RTC** - Realtime Clock mode:
      - LXT - full hardware support;
