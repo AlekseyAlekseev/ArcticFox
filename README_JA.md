@@ -1,7 +1,6 @@
-# We now have a forum
+# フォームが出来ました
 GitHubで新規ISSUEを作成しないで下さい。２～４週間でクローズする予定です。
-疑問、提案、会話をしたい場合は - https://nfeteam.org/forum をご利用ください。
-気に入ってくれると良いのですが。
+疑問、提案、問い合わせしたい場合は - https://nfeteam.org/forum をご利用ください。
 
 # ArcticFox
 *[NFE Team](http://nfeteam.org) はJoyetech, Wismec,  Eleafのデバイス用のカスタムファームウェアを提供しています。*
@@ -176,8 +175,8 @@ Joytechファームウェアと異なるメイン画面を編集してくださ�
      - Off/On/Lazy - Smart Mode behavior setting, Lazy means that profile can be switched automatically only on atomizer change while the box is in active state;
      - Range - resistance tolerance;
 * **Clock** - realtime clock setup;
-     - Date/Time - set current date and time;
-     - Adjust Time - precise adjusting time by 1 second step;
+     - Date/Time - 現在日時を設定します
+     - Adjust Time - 1秒単位で時間を微調整します
      - LIRC Speed - adjusting speed of internal imprecise oscillator used on boxes without external 32768 Hz crystal on board;
 * **Expert** - 上級者向けの設定
 
@@ -210,11 +209,11 @@ Support for Avatar RC adapter and similar. Provides charging devices with a volt
 To exit Power Bank mode press and hold Fire button, or regulatory buttons simultaneously.
 
 
-### Info Screen
+### 情報画面
 
 ![](http://i.imgur.com/bsXlfpV.png) ![](http://i.imgur.com/5FG1OD6.gif)
 
-Shows brief hardware information and some stats.
+ハードウェア情報、統計データを表示します。
 
 ### Many thanks to:
 
