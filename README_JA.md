@@ -179,7 +179,7 @@ Joytechファームウェアと異なるメイン画面を編集してくださ�
      - Date/Time - set current date and time;
      - Adjust Time - precise adjusting time by 1 second step;
      - LIRC Speed - adjusting speed of internal imprecise oscillator used on boxes without external 32768 Hz crystal on board;
-* **Expert** - settings for advanced users:
+* **Expert** - 上級者向けの設定
 
 ![](http://i.imgur.com/TewKhaq.png) ![](http://i.imgur.com/t24VXIO.png) ![](http://i.imgur.com/7feR2HK.png) ![](http://i.imgur.com/pp3TTaR.png)
 
@@ -189,7 +189,7 @@ Joytechファームウェアと異なるメイン画面を編集してくださ�
 * **BVO** - バッテリー電圧のオフセット
 * **BATT** - バッテリー放電のプロファイル
 * **SHUNT** - オームメーターの訂正
-* **ChkTCR** - 恋す素材のTCRチェック、 switching this option to off can eliminate TCR Error on heavy coils;
+* **ChkTCR** - コイル素材のTCRチェック、 switching this option to off can eliminate TCR Error on heavy coils;
 * **RCOBC** - Reset Counters on Battery Change, clear vaping statistics;
 * **RTC** - Realtime Clock mode:
      - LXT - full hardware support;
@@ -202,7 +202,7 @@ Joytechファームウェアと異なるメイン画面を編集してくださ�
      - ![](https://cdn4.iconfinder.com/data/icons/font-awesome-2/2048/f011-16.png) - switch box to powered off state before going into deep sleep;
      - ![](https://cdn2.iconfinder.com/data/icons/font-awesome/1792/lock-16.png) - lock box before going into deep sleep.
 
-### Power Bank
+### パワーバンク
 
 ![](http://i.imgur.com/IxyXhex.png) ![](http://i.imgur.com/pnfnHQ0.gif) ![](http://i.imgur.com/D8dLPZJ.gif)
 
