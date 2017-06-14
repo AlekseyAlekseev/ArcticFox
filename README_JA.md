@@ -67,9 +67,9 @@ GitHubで新規ISSUEを作成しないで下さい。２～４週間でクロー
 * 出力電流  (デバイスに依存)
 * 出力電圧範囲 (デバイスに依存)
 
-「デバイスに依存」 とはメーカによって設定されたデバイスの性能に依存するということです。ご利用メーカの製品ホームページで値を確認してください。
+「デバイスに依存」 とはメーカによるデバイスの仕様に依存するということです。ご利用メーカの製品ホームページで仕様を確認してください。
 
-**我々はあなたやご利用のデバイスが傷つくことを望んでいません。そのため、これらの制限事項への変更要求は受付けません。**
+**我々はあなたが傷ついたり、ご利用のデバイスが壊れることを望んでいません。そのため、これらの制限事項への変更要求は受付けません。**
 
 
 ## プロファイル
@@ -110,13 +110,13 @@ Joytechファームウェアと異なるメイン画面を編集してくださ�
 * **Wire(ワイヤー)** - コイルの素材, 温度管理かVW, 標準化、ユーザー設定のTFRが設定できます。
 * **Coil（コイル）** - コイルの抵抗を保存できます。
 * **TCR** - value can be edited when selected Joyetech TC algo with custom TCR;
-* **T. Dom** - temperature-dominant regulation style;
+* **T. Dom** - 温度郵政の調整スタイル
 * **プリヒート（Preheat）** - パワー調整, プリヒートかパワーカーブを使用
 * **PI-調整（PI-Reg）** - 温度管理用のPI調整です、パワーと温度管理の安定を改善します。
-     - PI-Reg On/Off - switch between stock Joyetech and PI regulation;
-     - Range - 0..100% - temperature range when PI regulation becomes active. 0 means that regulator is always on and controls power distribution from start of puff, 20% for example - PI regulator turns on when temperature of coil reached 20% range from profile settings;
-     - P - proportional constant, the larger it is, the sharper the power changed;
-     - I - integral constant, the larger it is, the settled power distribution is smoother.
+     - PI-Reg On/Off - Joyetech方式とPI調整の切り替え
+     - Range - 0..100% - PI調整が有効時の温度範囲。0 は常時調整、パフ開始時からのパワー供給コントロールすることを意味します。 20%は例えば - コイル温度がプロファイル設定の20％に到達時点でPI 調整が有効になります。
+     - P - 比例定数、値が大きければよりシャープにパワーが変わります。
+     - I - 積分定数、値が大きければ常時出力が滑らかになります。
 
 ### 画面メニュー
 
@@ -171,26 +171,26 @@ Joytechファームウェアと異なるメイン画面を編集してくださ�
      * **5 Fire button clicks**:
           - On/Off - モッド本体のon/off
           - Device ![](https://cdn2.iconfinder.com/data/icons/font-awesome/1792/lock-16.png) - lock all buttons but leave mod powered on;
-* **Smart** - automatic switching profiles settings:
-     - Off/On/Lazy - Smart Mode behavior setting, Lazy means that profile can be switched automatically only on atomizer change while the box is in active state;
-     - Range - resistance tolerance;
-* **Clock** - realtime clock setup;
+* **Smart** - 自動的にプロファイル設定を切換えます
+     - Off/On/Lazy - スマートモードの動作設定。 LazyはBoXが有効時アトマイザーを変更した場合、自動でプロファイルが変更されます。
+     - Range - 抵抗許容誤差
+* **Clock** - 時計調整
      - Date/Time - 現在日時を設定します
      - Adjust Time - 1秒単位で時間を微調整します
-     - LIRC Speed - adjusting speed of internal imprecise oscillator used on boxes without external 32768 Hz crystal on board;
+     - LIRC Speed - 速度調整of internal imprecise oscillator used on モッド基板上の32768Hz水晶体なしで
 * **Expert** - 上級者向けの設定
 
 ![](http://i.imgur.com/TewKhaq.png) ![](http://i.imgur.com/t24VXIO.png) ![](http://i.imgur.com/7feR2HK.png) ![](http://i.imgur.com/pp3TTaR.png)
 
 * **USB**
      - NoSlp - do not enter deep sleep mode while connected to USB - may lead to self-discharging multi-cells boxes after charging stops;
-     - Charge - device is charging batteries while connected to USB - for multi-cells boxes only;
+     - Charge - デバイスがUSBに接続されると充電を開始します。 - 複数電池対応デバイスのみ使用可能
 * **BVO** - バッテリー電圧のオフセット
 * **BATT** - バッテリー放電のプロファイル
 * **SHUNT** - オームメーターの訂正
-* **ChkTCR** - コイル素材のTCRチェック、 switching this option to off can eliminate TCR Error on heavy coils;
-* **RCOBC** - Reset Counters on Battery Change, clear vaping statistics;
-* **RTC** - Realtime Clock mode:
+* **ChkTCR** - コイル素材のTCRチェック、 このオプションをオフにすると重いコイルのTCRエラーが低減されます。switching this option to off can eliminate TCR Error on heavy coils;
+* **RCOBC** - バッテーリー交換時にカウンターをリセットし統計情報を削除。
+* **RTC** - リアルタイム時刻モードRealtime Clock mode:
      - LXT - full hardware support;
      - LIRC - inaccurate secondary oscillator;
      - LSL - software mode. It takes some more energy in standby mode, but provides more accurate results on boxes without hardware RTC implementation;  
