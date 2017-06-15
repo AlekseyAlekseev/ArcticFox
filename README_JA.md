@@ -1,3 +1,17 @@
+<!-- 
+# We now have a forum
+Please do not create new issues on GitHub. We will close this possibility in a 2-4 weeks.
+If you have questions or suggestions or you just want to talk - https://nfeteam.org/forum. 
+We are hoping that you will like it ;)
+
+# ArcticFox
+*[NFE Team](http://nfeteam.org) presents custom Firmware for Joyetech, Wismec and Eleaf battery mods*
+
+![](http://i.imgur.com/PqSrmLb.png) ![](http://i.imgur.com/C8Lu9SG.png) ![](http://i.imgur.com/aBhNKxV.png) ![](http://i.imgur.com/rk6gZo8.png) ![](http://i.imgur.com/5mU3FAB.png) ![](http://i.imgur.com/wl8wR8d.png) ![](http://i.imgur.com/s3yNIEf.png)
+
+**Use [NFE Toolbox](https://github.com/TBXin/NFirmwareEditor/releases) for [installing](https://github.com/maelstrom2001/ArcticFox/wiki/How-to-install) firmware and configuring your device.**
+-->
+
 # フォームが出来ました
 GitHubで新規ISSUEを作成しないで下さい。２～４週間でクローズする予定です。
 疑問、提案、問い合わせしたい場合は - https://nfeteam.org/forum をご利用ください。
@@ -55,6 +69,23 @@ GitHubで新規ISSUEを作成しないで下さい。２～４週間でクロー
 * iStick TC200W
 * iStick QC 200W
 
+<!-- 
+## Limitations
+The safe use of our software it's one of our main goals. We retain all factory restrictions, because the device manufacturer did NOT make them "just for fun".
+What are the limitations?
+* Minimal Resistance (For all supported devices)
+  * 0.05 Ohm for Temperature Control mode
+  * 0.1 Ohm for Vari-Watt mode
+* Output Wattage (Depending on the device)
+* Maximum Charging Current (Depending on the device)
+* Maximum Output Current (Depending on the device)
+* Output Voltage Range (Depending on the device)
+
+"Depending on the device" means that each device has its own values, which are choosen by the manufacturer. You can find this values on the product page of your manufacturer's website.
+
+**All requests to change these values will be rejected as we don't want you to hurt yourself or your device.**
+-->
+
 ## 制限事項
 安全なソフトウェアの利用は私たちの目標の一つです。 我々はメーカーの制限事項に準拠しています。
 
@@ -71,15 +102,34 @@ GitHubで新規ISSUEを作成しないで下さい。２～４週間でクロー
 
 **我々はあなたが傷ついたり、ご利用のデバイスが壊れることを望んでいません。そのため、これらの制限事項への変更要求は受付けません。**
 
-
-## プロファイル
-Joyetechのオリジナルファームウェアとの主な違いはユーザーインターフェース（DNAのようなスタイル）とカスタマイズ性です。
-プロファイルは使用するアトマイザー、コイルの素材、抵抗値、出力、温度などのパラメーターがセットとなったものです。
-NFE Toolboxを使用して好みとマイザーに応じて８つのプロファイルを編集することができます。
+<!--
+## Profiles
+The main difference is the profile based user interface, so to say, the DNA-style, and the larger focus on customization than original Joyetech firmware.
+Profile is the set of parameters of used atomizer, such as coil material, resistance, power and temperature values.
+The user have 8 profiles which can be edited with NFE Toolbox, and which can be assigned to his favourite atomizers.
 
 ![](http://i.imgur.com/GF9vAbN.gif) ![](http://i.imgur.com/n7IAwpv.gif)
 
-マニュアルモードにおいてプロファイルは保存されたコイルの抵抗値によって自動切換となります。自動切換を使用するためには「スマートモード」を有効後、アトマイザーを取り付け利用したいプロファイルに割り当ててください。
+Profiles can be switched automatically, based on saved coil resistance, and in manual mode. All you need to use the automatic switch is to enable "Smart" mode, install atomizer and assign them to the desired profile.
+
+![](http://i.imgur.com/J8TXMpU.png) ![](http://i.imgur.com/PvMv2at.png)
+
+When you re-install this atomizer later, assigned profile will be activated automatically.
+If resistance of installed atomizer is not found in profiles, you'll be prompted to select new profile or re-assign existing.
+
+When you switching manually to profile that have saved resistance mismatch, you'll be prompted to update or keep settings of selected profile.
+
+![](http://i.imgur.com/2u0Jgwb.png) ![](http://i.imgur.com/prrhsrr.png)
+-->
+
+## プロファイル
+元のJoyetechファームウェアとの主な違いはユーザーインターフェース（DNAのようなスタイル）とカスタマイズ性です。
+プロファイルは使用するアトマイザー、コイルの素材、抵抗値、出力、温度などのパラメーターがセットとなったものです。
+NFE Toolboxを使用して好みとマイザーに応じて８つのプロファイルを割り当てることができます。
+
+![](http://i.imgur.com/GF9vAbN.gif) ![](http://i.imgur.com/n7IAwpv.gif)
+
+プロファイルは保存されたコイルの抵抗値による自動または手動で切換可能です。自動切換を使用するためには「スマートモード」を有効後、アトマイザーを取り付け利用したいプロファイルに割り当ててください。
 
 
 ![](http://i.imgur.com/J8TXMpU.png) ![](http://i.imgur.com/PvMv2at.png)
@@ -90,12 +140,26 @@ NFE Toolboxを使用して好みとマイザーに応じて８つのプロファ
 
 ![](http://i.imgur.com/2u0Jgwb.png) ![](http://i.imgur.com/prrhsrr.png)
 
+<!--
+## Main Screen
+
+![](http://i.imgur.com/ARKJkRS.gif)
+
+Editing the main screen differs from original Joyetech firmwares. To edit items on main screen, call action "Edit Main" (4 Fire button clicks by default). Single Fire button click will switch next available editable item. Edit selected item by pressing regulatory buttons. To exit edit mode hold Fire button for about 1 sec.
+
+
+## Main Menu
+
+Hold Fire and Plus buttons (by default) for a 1 second to enter menu.
+
+![](http://i.imgur.com/feb0TFy.png) ![](http://i.imgur.com/be2BWSt.png)
+-->
 
 ## メイン画面
 
 ![](http://i.imgur.com/ARKJkRS.gif)
 
-Joytechファームウェアと異なるメイン画面を編集してください。メイン画面の項目を編集するためには「Edit Main」を起動(デフォルトではファイヤーボタン4回クリック)して下さい。ファイヤーボタンを一回クリックすると編集可能な項目へ移動します。選択された項目を調整ボタン（＋、－）で編集します。編集モードを終了するには約1秒ファイヤーボタンを押し続けて下さい。
+メイン画面の設定は元のJoytechファームウェアと異なります。メイン画面の項目を編集するためには「Edit Main」を起動(デフォルトではファイヤーボタン4回クリック)して下さい。ファイヤーボタンを一回クリックすると編集可能な項目へ移動します。選択された項目を調整ボタン（＋、－）で編集します。編集モードを終了するには約1秒ファイヤーボタンを押し続けて下さい。
 
 ## メインメニュー
 
@@ -103,20 +167,69 @@ Joytechファームウェアと異なるメイン画面を編集してくださ�
 
 ![](http://i.imgur.com/feb0TFy.png) ![](http://i.imgur.com/be2BWSt.png)
 
+<!--
+### Profile Menu
+
+![](http://i.imgur.com/k5lilx4.png) ![](http://i.imgur.com/5ZPdPL1.png) ![](http://i.imgur.com/eVM4jxZ.png) ![](http://i.imgur.com/6874bnH.png)
+
+* **Wire** - coil material, temperature sensing or not (VW), can be set to standard or user-defined TFR;
+* **Coil** - saved coil resistance;
+* **TCR** - value can be edited when selected Joyetech TC algo with custom TCR;
+* **T. Dom** - temperature-dominant regulation style;
+* **Preheat** - power control, use preheat or power curve;
+* **PI-Reg** - PI Regulator for TC mode, improves power and temperature stabilization:
+     - PI-Reg On/Off - switch between stock Joyetech and PI regulation;
+     - Range - 0..100% - temperature range when PI regulation becomes active. 0 means that regulator is always on and controls power distribution from start of puff, 20% for example - PI regulator turns on when temperature of coil reached 20% range from profile settings;
+     - P - proportional constant, the larger it is, the sharper the power changed;
+     - I - integral constant, the larger it is, the settled power distribution is smoother.
+-->
+
 ### プロファイルメニュー
 
 ![](http://i.imgur.com/k5lilx4.png) ![](http://i.imgur.com/5ZPdPL1.png) ![](http://i.imgur.com/eVM4jxZ.png) ![](http://i.imgur.com/6874bnH.png)
 
-* **Wire(ワイヤー)** - コイルの素材, 温度管理かVW, 標準化、ユーザー設定のTFRが設定できます。
-* **Coil（コイル）** - コイルの抵抗を保存できます。
-* **TCR** - value can be edited when selected Joyetech TC algo with custom TCR;
+* **Wire(ワイヤー)** - コイルの素材, 温度管理かVW, 標準か指定のTFRが設定できます。
+* **Coil（コイル）** - 保存されたコイル抵抗
+* **TCR** - カスタムTCRでJoyetech TC algoを選択すると値を編集できます。
 * **T. Dom** - 温度郵政の調整スタイル
-* **プリヒート（Preheat）** - パワー調整, プリヒートかパワーカーブを使用
-* **PI-調整（PI-Reg）** - 温度管理用のPI調整です、パワーと温度管理の安定を改善します。
-     - PI-Reg On/Off - Joyetech方式とPI調整の切り替え
-     - Range - 0..100% - PI調整が有効時の温度範囲。0 は常時調整、パフ開始時からのパワー供給コントロールすることを意味します。 20%は例えば - コイル温度がプロファイル設定の20％に到達時点でPI 調整が有効になります。
-     - P - 比例定数、値が大きければよりシャープにパワーが変わります。
-     - I - 積分定数、値が大きければ常時出力が滑らかになります。
+* **Preheat** - パワー調整, プリヒートかパワーカーブを使用する。
+* **PI-Reg** - 温度管理用のPI調整です、出力と温度管理の安定を改善します。
+     - PI-Reg On/Off - Joyetech方式とPI調整を切り替えます。
+     - Range - 0..100% - PI調整が有効となる温度範囲。0 は常時調整、パフ開始時からの出力コントロールすることを意味します。 20%は例えば - コイル温度がプロファイル設定の20％に到達時点でPI 調整が有効になります。
+     - P - 比例定数、値が大きければより急に出力が変わります。
+     - I - 積分定数、値が大きければ電力配分が滑らかになります。
+     [](
+     TODO I - 積分定数、値が大きければ電力配分が滑らかになります。
+     )
+
+<!--
+
+### Screen Menu
+
+![](http://i.imgur.com/ANnqWiG.png) ![](http://i.imgur.com/Z5ygFZR.png) ![](http://i.imgur.com/IKs6AeP.png) ![](http://i.imgur.com/u2wvplG.png) ![](http://i.imgur.com/f4pXIRN.png) ![](http://i.imgur.com/ozrsc7q.png)
+
+* **Wake <>** - waking mod up by pressing regulatory buttons;
+* **Logo** - show logo on main screen;
+* **Clock**
+     - **Type** - analog or digital;
+     - **On Main** - show clock on main screen;
+     - **Saver** - show clock in standby mode;
+* **Timeouts**
+     - **Dim** - idle time before the screen turns off;
+     - **Dim** ![](https://cdn2.iconfinder.com/data/icons/font-awesome/1792/lock-16.png) - idle time before the screen turns off in locked state;
+     - **Logo** - idle time before displaying logo;
+     - **Clock** - idle time before displaying clock;
+* **Charge**
+     - **Type** - charging screen type, standard or with additional information;
+     - **Add.** - extra item, clock or logo;
+* **Stealth** - settings for screen in Stealth Mode:
+     - **Charge** - charging screen will be shown in Stealth Mode;
+     - **Saver** - screen saver will be shown in Stealth Mode;
+     - **ClkOnF** - when Clock on Main Screen option is enabled, clock will be shown immediately on single Fire click;
+* **Contrast** - adjust brightness of display;
+* **Skin** - change main screen style.
+-->
+
 
 ### 画面メニュー
 
@@ -135,13 +248,55 @@ Joytechファームウェアと異なるメイン画面を編集してくださ�
      - **Clock** - 時計表示までの待機時間
 * **Charge**
      - **Type** - 充電中の画面タイプ、 標準のみか追加情報を含めるか
-     - **Add.** - extra item, 時計かロゴ
+     - **Add.** - 追加項目、時計かロゴ
 * **Stealth** - ステルスモード時の画面設定
      - **Charge** - ステルスモード中に充電画面を表示するか
      - **Saver** - ステルスモード中にスクリーンセーバーを表示するか
      - **ClkOnF** - オプションが有効な場合、メイン画面に時計を表示するか。ファイヤーボタンを1回押すと時計が表示されます。
-* **Contrast** - 画面に輝度変更
+* **Contrast** - 画面の明るさを変更
 * **Skin** - メイン画面のスタイルを変更
+
+<!--
+### Settings Menu
+
+![](http://i.imgur.com/iWCQH2q.png) ![](http://i.imgur.com/mQYC7Vi.png) ![](http://i.imgur.com/24Oqlur.png) ![](http://i.imgur.com/mS1hiZY.png)
+
+* **1 Watt** - increment/decrement power by 1,0 Watt;
+* **Clicks** - actions assigned on
+     * **2/3/4 Fire button clicks**:
+          - None;
+          - Edit Main - Joyetech default 3-clicks action;
+          - Main Menu - enter Main Menu, the same as Fire + ;
+          - Preheat - preheat settings for active profile;
+          - Profiles - Profiles Selector;
+          - Edit Profile - enter Profile Menu;
+          - T. Dom - temperature-dominant on/off;
+          - Clock - show/hide clock on main screen;
+          - Info - show Info Screen;
+          - Reset Cnt. - show vaping stats info screen with opportunity to reset counters;
+          - ![](https://cdn4.iconfinder.com/data/icons/font-awesome-2/2048/f011-16.png) Bank - switch box to Power Bank mode;
+          - Coil ![](https://cdn2.iconfinder.com/data/icons/font-awesome/1792/lock-16.png) - switch coil resistance lock on/off (for TC modes);
+          - Key ![](https://cdn2.iconfinder.com/data/icons/font-awesome/1792/lock-16.png) - switch Keylock on/off;
+          - Stealth - switch Stealth Mode on/off;
+          - Smart On/Off - switch Smart Mode on/off;
+          - LSL - switch light sleep mode on/off;
+          - Device ![](https://cdn2.iconfinder.com/data/icons/font-awesome/1792/lock-16.png) - switch Device Lock on / off (lock all buttons but leave mod powered on);
+          - On/Off - switch mod on/off;
+     * **5 Fire button clicks**:
+          - On/Off - switch mod on/off;
+          - Device ![](https://cdn2.iconfinder.com/data/icons/font-awesome/1792/lock-16.png) - lock all buttons but leave mod powered on;
+* **Smart** - automatic switching profiles settings:
+     - Off/On/Lazy - Smart Mode behavior setting, Lazy means that profile can be switched automatically only on atomizer change while the box is in active state;
+     - Range - resistance tolerance;
+* **Clock** - realtime clock setup;
+     - Date/Time - set current date and time;
+     - Adjust Time - precise adjusting time by 1 second step;
+     - LIRC Speed - adjusting speed of internal imprecise oscillator used on boxes without external 32768 Hz crystal on board;
+* **Expert** - settings for advanced users:
+
+![](http://i.imgur.com/TewKhaq.png) ![](http://i.imgur.com/t24VXIO.png) ![](http://i.imgur.com/7feR2HK.png) ![](http://i.imgur.com/pp3TTaR.png)
+-->
+
 
 ### 設定メニュー
 
@@ -159,41 +314,62 @@ Joytechファームウェアと異なるメイン画面を編集してくださ�
           - T. Dom - temperature-dominant on/off
           - Clock - メイン画面に時計を表示するか
           - Info - 情報画面を表示
-          - Reset Cnt. - 情報画面にshow vaping stats info screen with opportunity to reset counters;
+          - Reset Cnt. - カウンターをリセット可能なVaping統計情報画面を表示する。
           - ![](https://cdn4.iconfinder.com/data/icons/font-awesome-2/2048/f011-16.png) Bank - パワーバンクモードへ移行
           - Coil ![](https://cdn2.iconfinder.com/data/icons/font-awesome/1792/lock-16.png) - コイル抵抗ロックのon/off (温度管理モード用);
           - Key ![](https://cdn2.iconfinder.com/data/icons/font-awesome/1792/lock-16.png) - キーロックのon/off;
           - Stealth - ステルスモードのon/off
           - Smart On/Off - スマートモードのon/off
-          - LSL - スリープモードのon/off
+          - LSL - ライトのスリープモードのon/off
           - Device ![](https://cdn2.iconfinder.com/data/icons/font-awesome/1792/lock-16.png) - デバイスロックのon / off (全ボタンをロック but leave mod powered on)
           - On/Off - モッド本体のon/off
      * **5 Fire button clicks**:
           - On/Off - モッド本体のon/off
-          - Device ![](https://cdn2.iconfinder.com/data/icons/font-awesome/1792/lock-16.png) - lock all buttons but leave mod powered on;
+          - Device ![](https://cdn2.iconfinder.com/data/icons/font-awesome/1792/lock-16.png) - すべてのボタンをロックしますが、電源はオンのままです。
 * **Smart** - 自動的にプロファイル設定を切換えます
      - Off/On/Lazy - スマートモードの動作設定。 LazyはBoXが有効時アトマイザーを変更した場合、自動でプロファイルが変更されます。
-     - Range - 抵抗許容誤差
+     - Range - 抵抗の許容差
 * **Clock** - 時計調整
      - Date/Time - 現在日時を設定します
      - Adjust Time - 1秒単位で時間を微調整します
-     - LIRC Speed - 速度調整of internal imprecise oscillator used on モッド基板上の32768Hz水晶体なしで
+     - LIRC Speed - 基板上に32768Hzを搭載していないデバイスにおける内部発振器の速度を調整します。
 * **Expert** - 上級者向けの設定
 
 ![](http://i.imgur.com/TewKhaq.png) ![](http://i.imgur.com/t24VXIO.png) ![](http://i.imgur.com/7feR2HK.png) ![](http://i.imgur.com/pp3TTaR.png)
 
+<!--
 * **USB**
      - NoSlp - do not enter deep sleep mode while connected to USB - may lead to self-discharging multi-cells boxes after charging stops;
-     - Charge - デバイスがUSBに接続されると充電を開始します。 - 複数電池対応デバイスのみ使用可能
-* **BVO** - バッテリー電圧のオフセット
-* **BATT** - バッテリー放電のプロファイル
-* **SHUNT** - オームメーターの訂正
-* **ChkTCR** - コイル素材のTCRチェック、 このオプションをオフにすると重いコイルのTCRエラーが低減されます。switching this option to off can eliminate TCR Error on heavy coils;
-* **RCOBC** - バッテーリー交換時にカウンターをリセットし統計情報を削除。
-* **RTC** - リアルタイム時刻モードRealtime Clock mode:
+     - Charge - device is charging batteries while connected to USB - for multi-cells boxes only;
+* **BVO** - batteries voltages offset;
+* **BATT** - battery discharge profile;
+* **SHUNT** - Ohm-meter correction;
+* **ChkTCR** - check coil material TCR, switching this option to off can eliminate TCR Error on heavy coils;
+* **RCOBC** - Reset Counters on Battery Change, clear vaping statistics;
+* **RTC** - Realtime Clock mode:
      - LXT - full hardware support;
      - LIRC - inaccurate secondary oscillator;
      - LSL - software mode. It takes some more energy in standby mode, but provides more accurate results on boxes without hardware RTC implementation;  
+     ***Note***: after switching RTC mode unplug USB and reboot your box by pulling out batteries for about 30 sec.
+* **TEMP** - board temperature sensor, Ext - thermistor, Int - MCU;
+* **D. Sleep** - deep sleep (enter after 3 minutes of inactivity) mode:
+     - Std - standard deep sleep;
+     - ![](https://cdn4.iconfinder.com/data/icons/font-awesome-2/2048/f011-16.png) - switch box to powered off state before going into deep sleep;
+     - ![](https://cdn2.iconfinder.com/data/icons/font-awesome/1792/lock-16.png) - lock box before going into deep sleep.
+-->
+
+* **USB**
+     - NoSlp - USB接続時にスリープモードに移行しません。 - 充電停止後に複数電池の自己放電となる可能性があります。
+     - Charge - デバイスがUSBに接続中充電を開始します。 - 複数電池対応デバイスのみ使用可能
+* **BVO** - バッテリー電圧のオフセット
+* **BATT** - バッテリー放電のプロファイル
+* **SHUNT** - オームメーターの補正
+* **ChkTCR** - コイル素材のTCRチェック、 このオプションをオフにすると重いコイルのTCRエラーが低減されます。
+* **RCOBC** - バッテーリー交換のカウンターをリセットし統計情報を削除。
+* **RTC** - リアルタイム時刻モード
+     - LXT - 完全なハードウェアサポート。
+     - LIRC - inaccurate secondary oscillator;
+     - LSL - ソフトウェアモード。スタンバイモードではさらにエネルギーを消費しますが、 but provides more accurate results on boxes without hardware RTC implementation;  
      ***Note***: after switching RTC mode unplug USB and reboot your box by pulling out batteries for about 30 sec.
 * **TEMP** - board temperature sensor, Ext - thermistor, Int - MCU;
 * **D. Sleep** - deep sleep (enter after 3 minutes of inactivity) mode:
