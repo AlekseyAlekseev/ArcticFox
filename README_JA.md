@@ -87,7 +87,7 @@ What are the limitations?
 -->
 
 ## 制限事項
-安全なソフトウェアの利用は私たちの目標の一つです。 我々はメーカーの制限事項に準拠しています。
+安全なソフトウェアは目標の一つで、 メーカーの制限事項に準拠しています。
 
 制限事項は以下となります。
 * 最小抵抗値 (すべてのデバイスが対象)
@@ -100,7 +100,7 @@ What are the limitations?
 
 「デバイスに依存」 とはメーカによるデバイスの仕様に依存するということです。ご利用メーカの製品ホームページで仕様を確認してください。
 
-**我々はあなたが傷ついたり、ご利用のデバイスが壊れることを望んでいません。そのため、これらの制限事項への変更要求は受付けません。**
+**我々はあなたが怪我をしたり、ご利用のデバイスが壊れることを望んでいません。そのため、これらの制限事項への変更要求は受付けません。**
 
 <!--
 ## Profiles
@@ -304,7 +304,7 @@ Hold Fire and Plus buttons (by default) for a 1 second to enter menu.
 
 * **1 Watt** - 1ワット単位でパワーを調整するか
 * **Clicks** - アクションの割り当てをします
-     * **2/3/4 Fire button clicks**:
+     * **ファイヤーボタン クリック数 2/3/4**:
           - None - 何もしない
           - Edit Main - Joyetechのデフォルトは3クリック
           - Main Menu - メインメニューに遷移します。 ファイヤーボタンと+ボタン同時押しと同じ
@@ -332,7 +332,7 @@ Hold Fire and Plus buttons (by default) for a 1 second to enter menu.
 * **Clock** - 時計調整
      - Date/Time - 現在日時を設定します
      - Adjust Time - 1秒単位で時間を微調整します
-     - LIRC Speed - 基板上に32768Hzを搭載していないデバイスにおける内部発振器の速度を調整します。
+     - LIRC Speed - 基板上に32768Hz水晶振動子を搭載していないデバイスの発振器の速度を調整します。
 * **Expert** - 上級者向けの設定
 
 ![](http://i.imgur.com/TewKhaq.png) ![](http://i.imgur.com/t24VXIO.png) ![](http://i.imgur.com/7feR2HK.png) ![](http://i.imgur.com/pp3TTaR.png)
@@ -350,7 +350,7 @@ Hold Fire and Plus buttons (by default) for a 1 second to enter menu.
      - LXT - full hardware support;
      - LIRC - inaccurate secondary oscillator;
      - LSL - software mode. It takes some more energy in standby mode, but provides more accurate results on boxes without hardware RTC implementation;  
-     ***Note***: after switching RTC mode unplug USB and reboot your box by pulling out batteries for about 30 sec.
+     ***注意***: after switching RTC mode unplug USB and reboot your box by pulling out batteries for about 30 sec.
 * **TEMP** - board temperature sensor, Ext - thermistor, Int - MCU;
 * **D. Sleep** - deep sleep (enter after 3 minutes of inactivity) mode:
      - Std - standard deep sleep;
@@ -368,21 +368,38 @@ Hold Fire and Plus buttons (by default) for a 1 second to enter menu.
 * **RCOBC** - バッテーリー交換のカウンターをリセットし統計情報を削除。
 * **RTC** - リアルタイム時刻モード
      - LXT - 完全なハードウェアサポート。
-     - LIRC - inaccurate secondary oscillator;
-     - LSL - ソフトウェアモード。スタンバイモードではさらにエネルギーを消費しますが、 but provides more accurate results on boxes without hardware RTC implementation;  
-     ***Note***: after switching RTC mode unplug USB and reboot your box by pulling out batteries for about 30 sec.
-* **TEMP** - board temperature sensor, Ext - thermistor, Int - MCU;
-* **D. Sleep** - deep sleep (enter after 3 minutes of inactivity) mode:
-     - Std - standard deep sleep;
-     - ![](https://cdn4.iconfinder.com/data/icons/font-awesome-2/2048/f011-16.png) - switch box to powered off state before going into deep sleep;
-     - ![](https://cdn2.iconfinder.com/data/icons/font-awesome/1792/lock-16.png) - lock box before going into deep sleep.
+     - LIRC - 不正確な発振器。
+     - LSL - ソフトウェアモード。スタンバイモードで電力を消費しますが、リアルタイムクロック未搭載のデバイスでより正確な時刻となります。
+     ***注意***: リアルタイム時刻モードに変更後はUSBを抜き、電池を30秒間抜いた後再起動してください。
+* **TEMP** - 温度センサー種別、Ext - サーミスタ(thermistor), Int - MUC温度センサー
+* **D. Sleep** - ディープスリープモード (3分の未操作で移行します)。
+     - Std - 標準ディープスリープ
+     - ![](https://cdn4.iconfinder.com/data/icons/font-awesome-2/2048/f011-16.png) - ディープスリープ前に電源を切ります。
+     - ![](https://cdn2.iconfinder.com/data/icons/font-awesome/1792/lock-16.png) - ディープスリープ前にロックします。
 
-### パワーバンク
+<!-- 
+
+### Power Bank
 
 ![](http://i.imgur.com/IxyXhex.png) ![](http://i.imgur.com/pnfnHQ0.gif) ![](http://i.imgur.com/D8dLPZJ.gif)
 
 Support for Avatar RC adapter and similar. Provides charging devices with a voltage of 5 volts and current up to 2.1 amps. To start charging, put RC adapter on box, connect device and press Fire button. Power Bank mode has auto-off feature when current drain is not exceed 50 mA (indicated by blinking label "On"). To stop charging, press Fire button.
 To exit Power Bank mode press and hold Fire button, or regulatory buttons simultaneously.
+
+
+### Info Screen
+
+![](http://i.imgur.com/bsXlfpV.png) ![](http://i.imgur.com/5FG1OD6.gif)
+
+Shows brief hardware information and some stats.
+-->
+
+### パワーバンク
+
+![](http://i.imgur.com/IxyXhex.png) ![](http://i.imgur.com/pnfnHQ0.gif) ![](http://i.imgur.com/D8dLPZJ.gif)
+
+Avatar RC adapter等をサポートしています。5ボルト、最大2.1アンペアでデバイスに充電できます。充電を開始するためには、RC adapter接続後、デバイスに接続しファイヤーボタンを押します。パワーバンクモードは、出力電流が50mA以下となった場合（「On」が点滅）自動オフとなります。充電を停止する場合、ファイヤーボタンを押して下さい。
+パワーバンクモードを終了する場合、ファイヤーボタンか調整ボタン（＋、－）をしばらく押して下さい。
 
 
 ### 情報画面
@@ -391,16 +408,27 @@ To exit Power Bank mode press and hold Fire button, or regulatory buttons simult
 
 ハードウェア情報、統計データを表示します。
 
-### Many thanks to:
+### 感謝:
 
-* **TBXin** - for NFE Products and joint development
-* **Zinger** - for graphics, ideas and tests
-* **ArionWT** - for graphics, ideas and tests
-* **ClockSelect** - for great project called myevic
+* **TBXin** - NFE製品および共同開発用
+* **Zinger** - グラフィックス、アイデア、テスト
+* **ArionWT** - グラフィックス、アイデア、テスト
+* **ClockSelect** - 素晴らしいmyevicプロジェクト
 
+<!-- 
 # Disclaimer:
 
 The firmware is distributed in the hope that it will be useful, but without any warranty. It is provided "as is" without warranty of any kind, either expressed or implied, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose. The entire risk as to the quality and performance of the firmware is with you.
+-->
 
+# 免責事項:
+
+使用可能なファームウェアとして配布していますが保証はありません。通常用途、特定用途は保証されますが、それ以外のあらゆる保証はありません。ファームウェアの品質および性能に関するリスクは全てご自身で負って下さい。
+
+<!-- 
 # Donations:
 If you like our project and you want to help in its development, you can [donate](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZLFDYGBRXQJGE) us the amount of money you deem acceptable.
+-->
+
+# 寄付:
+このプロジェクトに賛同し支援する場合、 できる範囲での[寄付](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZLFDYGBRXQJGE)をお願いします。
