@@ -129,7 +129,7 @@ NFE Toolboxを使用して好みとマイザーに応じて８つのプロファ
 
 ![](http://i.imgur.com/GF9vAbN.gif) ![](http://i.imgur.com/n7IAwpv.gif)
 
-プロファイルは保存されたコイルの抵抗値による自動または手動で切換可能です。自動切換を使用するためには「スマートモード」を有効後、アトマイザーを取り付け利用したいプロファイルに割り当ててください。
+プロファイルは保存されたコイルの抵抗値による自動切換えか手動での切換が可能です。自動切換を使用するためには「スマートモード」を有効後、アトマイザーを取り付け利用したいプロファイルに割り当ててください。
 
 
 ![](http://i.imgur.com/J8TXMpU.png) ![](http://i.imgur.com/PvMv2at.png)
@@ -189,18 +189,15 @@ Hold Fire and Plus buttons (by default) for a 1 second to enter menu.
 ![](http://i.imgur.com/k5lilx4.png) ![](http://i.imgur.com/5ZPdPL1.png) ![](http://i.imgur.com/eVM4jxZ.png) ![](http://i.imgur.com/6874bnH.png)
 
 * **Wire(ワイヤー)** - コイルの素材, 温度管理かVW, 標準か指定のTFRが設定できます。
-* **Coil（コイル）** - 保存されたコイル抵抗
+* **Coil（コイル）** - 保存したコイル抵抗値。
 * **TCR** - カスタムTCRでJoyetech TC algoを選択すると値を編集できます。
-* **T. Dom** - 温度郵政の調整スタイル
-* **Preheat** - パワー調整, プリヒートかパワーカーブを使用する。
-* **PI-Reg** - 温度管理用のPI調整です、出力と温度管理の安定を改善します。
-     - PI-Reg On/Off - Joyetech方式とPI調整を切り替えます。
+* **T. Dom** - 温度優先調整方式。
+* **Preheat** - パワー調整, プリヒートかパワーカーブ。
+* **PI-Reg** - 温度管理用のPI調整。出力と温度管理の安定性を改善します。
+     - PI-Reg On/Off - Joyetech方式とPI調整の切り替え。
      - Range - 0..100% - PI調整が有効となる温度範囲。0 は常時調整、パフ開始時からの出力コントロールすることを意味します。 20%は例えば - コイル温度がプロファイル設定の20％に到達時点でPI 調整が有効になります。
-     - P - 比例定数、値が大きければより急に出力が変わります。
-     - I - 積分定数、値が大きければ電力配分が滑らかになります。
-     [](
-     TODO I - 積分定数、値が大きければ電力配分が滑らかになります。
-     )
+     - P - 比例定数、値が大きければより出力が急激に変わります。
+     - I - 積分定数、値が大きければ固定の出力分布が滑らかになります。
 
 <!--
 
@@ -311,7 +308,7 @@ Hold Fire and Plus buttons (by default) for a 1 second to enter menu.
           - Preheat - 有効なプロファイルのプリヒートを設定
           - Profiles - プロファイルを選択する
           - Edit Profile - プロファイルメニューへ遷移
-          - T. Dom - temperature-dominant on/off
+          - T. Dom - 温度優先 on/off
           - Clock - メイン画面に時計を表示するか
           - Info - 情報画面を表示
           - Reset Cnt. - カウンターをリセット可能なVaping統計情報画面を表示する。
